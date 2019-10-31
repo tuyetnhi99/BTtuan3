@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BT_Tuan3_Sqlite"
+             x:Class="SQLite.MainPage">
+
+    <StackLayout>
+        <Button Text="Thêm loại hoa" x:Name="cmdthemLoaiHoa" HorizontalOptions="Center" Clicked="cmdthemLoaiHoa_Clicked"/>
+        <Button Text="Hiển thị loại hoa" x:Name="cmdShowLoaiHoa" Clicked="cmdShowLoaiHoa_Clicked"/>
+        <Button Text="Thêm Hoa" x:Name="cmdThemHoa" HorizontalOptions="Center" Clicked="cmdThemHoa_Clicked"/>
+        <Button Text="Hiển thị Hoa" x:Name="cmdShowHoa" Clicked="cmdShowHoa_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

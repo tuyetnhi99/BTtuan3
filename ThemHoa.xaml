@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLite.ThemHoa">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Mã Loại" Grid.Column="0" Grid.Row="0"/>
+                <Picker Title="Chọn loại hoa" x:Name="cboloaihoa" ItemDisplayBinding="{Binding TenLoai}" 
+                        SelectedIndexChanged="cboloaihoa_SelectedIndexChanged" 
+                        Grid.Column="1" Grid.Row="0"/>
+                <Label Text="Tên hoa" Grid.Column="0" Grid.Row="1"/>
+                <Entry x:Name="txttenhoa" Grid.Column="1" Grid.Row="1"/>
+                <Label Text="Hình" Grid.Column="0" Grid.Row="2"/>
+                <Entry x:Name="txthinh" Grid.Column="1" Grid.Row="2"/>
+                <Label Text="Giá bán" Grid.Column="0" Grid.Row="3"/>
+                <Entry x:Name="txtgia" Grid.Column="1" Grid.Row="3"/>
+                <Label Text="Mô tả" Grid.Column="0" Grid.Row="4"/>
+                <Editor x:Name="txtMota" Grid.Column="1" Grid.Row="4"/>
+                <Button x:Name="addHoa" Text="Thêm hoa" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Clicked="addHoa_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
